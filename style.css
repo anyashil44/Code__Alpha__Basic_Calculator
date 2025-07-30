@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #e0e5ec;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+}
+
+.calculator {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 8px 8px 20px #bebebe, -8px -8px 20px #ffffff;
+  width: 320px;
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f0f0f0;
+  box-shadow: inset 4px 4px 5px #d1d1d1, inset -4px -4px 5px #ffffff;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background: #e0e5ec;
+  box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:active {
+  box-shadow: inset 4px 4px 10px #bebebe, inset -4px -4px 10px #ffffff;
+}
+
+.operator {
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.equal {
+  grid-column: span 2;
+  background: #27ae60;
+  color: white;
+}
+
+.history {
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+  box-shadow: inset 4px 4px 8px #e0e0e0, inset -4px -4px 8px #ffffff;
+}
+
+.history h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history li {
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.history li:hover {
+  background-color: #f0f0f0;
+}
